@@ -1,0 +1,89 @@
+:root{
+    --backgroundColor : #00072D;
+    --lightBlueTheme : #c1e8ff;
+    --secondaryTheme : #D1DDED;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "bahnschrift";
+    height: 100vh;
+    background-color: var(--secondaryTheme);
+
+}
+.head{
+    display: flex;
+    position: fixed;
+    background-color: var(--backgroundColor);
+    color : var(--lightBlueTheme);
+    height: 100px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex: 1;    
+}
+.content{
+    display: flex;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.outcase{
+    height: 400px;
+    width: 255px;
+    background-color: #A8B5E0;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+#monitor{
+    width: 231px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: var(--secondaryTheme);
+    font-size: 20px;
+}
+.buttons{
+    margin: 10px;
+    display: grid; grid-template-columns: 50px 50px 50px; 
+    grid-auto-rows: 50px 50px 50px 50px;
+    gap: 10px; 
+    background-color: var(--secondaryTheme);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 18px;
+}
+.buttons div{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.buttons div {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.buttons div:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.reset{
+    margin-left: 15px;
+    margin-right: 20px;
+    text-align: end;    
+}
+.reset input{
+    width: 50px;
+    background-color: white;
+    border-radius: 20px;
+}
